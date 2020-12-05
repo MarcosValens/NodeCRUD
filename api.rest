@@ -1,0 +1,33 @@
+###
+// Obtener todos los empleados
+GET http://localhost:4000/api/employees
+
+###
+// Crear empleado
+POST http://localhost:4000/api/employees
+Content-Type: application/json
+
+{
+    "name": "Pepe",
+    "position": "Junior",
+    "office": "Spain",
+    "salary": "20000"
+}
+
+###
+// Obtener empleado por ID
+GET http://localhost:4000/api/employees/5fcbb07c3456a62ae4291dce
+
+###
+// Eliminar empleado por ID
+DELETE http://localhost:4000/api/employees/5fcbaa88cf89a6338c3dceaa
+
+###
+// Editar usuario
+
+PUT http://localhost:4000/api/employees/5fcbbca8e0b6544310514309
+Content-Type: application/json
+
+{
+    "salary": 500
+}
